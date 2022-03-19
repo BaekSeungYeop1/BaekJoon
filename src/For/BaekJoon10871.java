@@ -43,6 +43,7 @@ public class BaekJoon10871 {
 			if(value<X) {
 				sb.append(value+ " ");
 			}
+		}
 		System.out.println(sb);
 		*/
 		
