@@ -29,7 +29,17 @@ public class BaekJoon10809 {
 		for(int value : arr) {
 			System.out.print(value+ " ");
 		}
+		
 
+		// indexof()
+		/*
+		Scanner sc = new Scanner(System.in);
+        
+        String word = sc.next();
+        for (char c = 'a' ; c <= 'z' ; c++) {
+            System.out.print(word.indexOf(c) + " ");
+            }
+            */
 	}
 
 }
