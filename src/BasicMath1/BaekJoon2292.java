@@ -8,11 +8,11 @@ public class BaekJoon2292 {
 
 	public static void main(String[] args) throws IOException{
 		/*
-		 * 1
-		 * 2 ~ 7 (6개) 1+ 6n
-		 * 8 ~ 19 (12개) 1+ 6n
-		 * 20 ~ 37 (18개)
-		 * 38 ~ 61 (24개)
+		 * 1 : 1
+		 * 2 : 2 ~ 7 (6개) 1+ 6n
+		 * 3 : 8 ~ 19 (12개) 1+ 6n
+		 * 4 : 20 ~ 37 (18개)
+		 * 5 : 38 ~ 61 (24개)
 		 */
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
