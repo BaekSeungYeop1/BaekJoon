@@ -24,11 +24,14 @@ public class BaekJoon1929 {
 		
 		for(int i = M; i <= N; i++) {
 			// false = 소수 
-			if(!prime[i]) sb.append(i).append('\n');
+			if(!prime[i]) {
+				sb.append(i).append('\n');
+			}
 		}
 		System.out.println(sb);
 	}
  
+	// 에라토스테네스의 체 알고리즘
 	public static void get_prime() {
 		// true = 소수아님 , false = 소수 
 		prime[0] = prime[1] = true;
