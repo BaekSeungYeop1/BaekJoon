@@ -9,8 +9,7 @@ import java.util.StringTokenizer;
 public class BaekJoon23881 {
 	private static int N,K, kth1=-1,kth2;
 
-	public static void main(String[] args) throws IOException {
-		
+	public static void main(String[] args) throws IOException {	
 		solution();
 	}
 	private static void solution() throws IOException {
@@ -33,11 +32,11 @@ public class BaekJoon23881 {
 
 	private static void selectionSort(int[] arr,int N,int K) {
 		
-		int temp;
-		int maxIndex;
-		int cnt = 0;
+		int temp;	// 임시 변수
+		int maxIndex;	// 가장 큰 원소의 인덱스
+		int cnt = 0;	// 교환 횟수
 		
-		for(int i = N-1; i>0; i--) {
+		for(int i = N-1; i>0; i--) {	
 			maxIndex = i;
 			for(int j = i-1; j>=0; j--) {
 				if(arr[maxIndex]<arr[j]) {
