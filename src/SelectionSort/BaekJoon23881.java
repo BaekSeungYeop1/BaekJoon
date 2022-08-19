@@ -43,7 +43,8 @@ public class BaekJoon23881 {
 					maxIndex = j;
 				}
 			}
-			if(i != maxIndex) {
+			// maxIndex와 i 값이 다를 경우, 즉 선택정렬의 교환이 일어나는 조건
+			if(i != maxIndex) {	
 				temp = arr[maxIndex];
 				arr[maxIndex] = arr[i];
 				arr[i] = temp;
