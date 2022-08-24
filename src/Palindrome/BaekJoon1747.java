@@ -34,8 +34,8 @@ public class BaekJoon1747 {
 	}
 
 	/*
-	소수가 아닌 index = true
-	소수인 index = false
+	소수가 아닌 index = false
+	소수인 index = true
 	*/
 	private static boolean checkPrime(int n) {
 		if(n == 1) return false;
