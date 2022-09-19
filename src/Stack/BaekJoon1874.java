@@ -24,7 +24,7 @@ public class BaekJoon1874 {
 				start = num;
 			}
 			else if(stack.peek() != num) {
-				System.out.print("No");
+				System.out.print("NO");
 				return;
 			}
 			
