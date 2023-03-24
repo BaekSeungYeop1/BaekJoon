@@ -1,34 +1,30 @@
 import java.util.*;
 class Solution {
     public int solution(int[] array) {
-        int answer = 0;
-      int maxValue, preMaxIndex;
-      HashMap<Integer,Integer> countMap = new HashMap<Integer,Integer>();
-      for(int number : array) {
-            if (countMap.containsKey(number)) {
-                countMap.put(number, countMap.get(number) + 1);
-            }
-            else {
-                countMap.put(number, 1);
+      int answer = 0;
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        for (int num : array){
+            if (hashMap.containsKey(num)){
+                hashMap.put(num,hashMap.get(num)+1);
+            }else {
+                hashMap.put(num,1);
             }
         }
 
-        maxValue = -1;
-        preMaxIndex = -1;
-
-        for(int key : countMap.keySet()){
-            if(maxValue < countMap.get(key)){
-                maxValue = countMap.get(key);
+        int maxValue = Integer.MIN_VALUE;
+        int preMaxIndex = -1;
+        for (int key : hashMap.keySet()){
+            if (maxValue < hashMap.get(key)){
+                maxValue = hashMap.get(key);
                 answer = key;
-            }
-            else if (maxValue==countMap.get(key)){
-                preMaxIndex=key;
+            }else if (maxValue == hashMap.get(key)){
+                preMaxIndex = key;
             }
         }
-        if(countMap.get(answer)==countMap.get(preMaxIndex)){
-            answer= -1;
-            return answer;
+        if (hashMap.get(answer) == hashMap.get(preMaxIndex)){
+            return -1;
         }
+
         return answer;
     }
 }
