@@ -12,6 +12,7 @@ class Solution {
             }
         }
         int cnt = 0;
+        // 안전 지대의 칸수 찾기
         for (int i = 0; i<safeBoard.length; i++){
             for (int j = 0; j<safeBoard.length; j++){
                 if (safeBoard[i][j] == 0){
@@ -22,6 +23,7 @@ class Solution {
 
         return cnt;
     }
+    // 안전지대 찾기
     private static void safeZone(int a,int b) {
         for (int i = a-1; i <= a+1; i++){
             for (int j= b-1; j <= b+1; j++){
